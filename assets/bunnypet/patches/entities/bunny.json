@@ -1,40 +1,40 @@
 [
 {
-    "side":"server",
-    "op":"add",
+    "op":"addmerge",
     "file":"game:entities/animal/mammal/hare-adult.json",
     "path":"/server/behaviors/-",
     "value":{
         "code":"tameable",
+        "tameEntityCode": "bunnypet:bunnypet-{type}-adult-{gender}",
         "size":"small",
-        "disobediencePerDay":"10",
+        "disobediencePerDay":"15",
         "treat":[
             {
-                "code":"parsnip",
+                "code":"vegetable-parsnip",
                 "domain":"game",
                 "progress":"10",
                 "cooldown":"1"
             },
             {
-                "code":"cabbage",
+                "code":"vegetable-cabbage",
                 "domain":"game",
                 "progress":"5",
                 "cooldown":"1"
             },
             {
-                "code":"turnip",
+                "code":"vegetable-turnip",
                 "domain":"game",
                 "progress":"5",
                 "cooldown":"1"
             },
             {
-                "code":"pumpkin",
+                "code":"vegetable-pumpkin",
                 "domain":"game",
                 "progress":"10",
                 "cooldown":"1"
             },
             {
-                "code":"carrot",
+                "code":"vegetable-carrot",
                 "domain":"game",
                 "progress":"5",
                 "cooldown":"0.5"
@@ -52,10 +52,64 @@
                 "cooldown":"1.5"
             },
             {
-                "code":"parsley",
+                "code":"drygrass",
+                "domain":"game",
+                "progress":"1",
+                "cooldown":"0.05"
+            }
+        ]
+    }
+},
+
+{
+    "op": "addmerge",
+    "file":"game:entities/animal/mammal/hare-adult.json",
+    "path": "/client/behaviors/-",
+    "value": {
+        "code": "tameable",
+        "size": "small",
+        "treat": [
+            {
+                "code":"vegetable-parsnip",
+                "domain":"game",
+                "progress":"10",
+                "cooldown":"1"
+            },
+            {
+                "code":"vegetable-cabbage",
                 "domain":"game",
                 "progress":"5",
                 "cooldown":"1"
+            },
+            {
+                "code":"vegetable-turnip",
+                "domain":"game",
+                "progress":"5",
+                "cooldown":"1"
+            },
+            {
+                "code":"vegetable-pumpkin",
+                "domain":"game",
+                "progress":"10",
+                "cooldown":"1"
+            },
+            {
+                "code":"vegetable-carrot",
+                "domain":"game",
+                "progress":"5",
+                "cooldown":"0.5"
+            },
+            {
+                "code":"grain",
+                "domain":"game",
+                "progress":"15",
+                "cooldown":"1"
+            },
+            {
+                "code":"fruit",
+                "domain":"game",
+                "progress":"25",
+                "cooldown":"1.5"
             },
             {
                 "code":"drygrass",
@@ -68,18 +122,125 @@
 },
 
 {
-"op": "add",
-"side":"both",
-"file": "game:entities/animal/mammal/hare-adult.json",
-"path": "/server/behaviors/-",
-"value": {
-    "code": "receivecommand",
-    "availablecommands": [
-    { "commandName": "sit", "commandType": "SIMPLE", "minObedience": 0.5 },
-    { "commandName": "followmaster", "commandType": "COMPLEX", "minObedience": 0.5 },
-    { "commandName": "stay", "commandType": "COMPLEX", "minObedience": 0.6 }
-    ]
-}
+    "op":"addmerge",
+    "file":"game:entities/animal/mammal/hare-baby.json",
+    "path":"/server/behaviors/-",
+    "value":{
+        "code":"tameable",
+        "tameEntityCode": "bunnypet:bunnypet-{type}-baby-{gender}",
+        "size":"small",
+        "disobediencePerDay":"5",
+        "treat":[
+            {
+                "code":"vegetable-parsnip",
+                "domain":"game",
+                "progress":"10",
+                "cooldown":"1"
+            },
+            {
+                "code":"vegetable-cabbage",
+                "domain":"game",
+                "progress":"5",
+                "cooldown":"1"
+            },
+            {
+                "code":"vegetable-turnip",
+                "domain":"game",
+                "progress":"5",
+                "cooldown":"1"
+            },
+            {
+                "code":"vegetable-pumpkin",
+                "domain":"game",
+                "progress":"10",
+                "cooldown":"1"
+            },
+            {
+                "code":"vegetable-carrot",
+                "domain":"game",
+                "progress":"5",
+                "cooldown":"0.5"
+            },
+            {
+                "code":"grain",
+                "domain":"game",
+                "progress":"15",
+                "cooldown":"1"
+            },
+            {
+                "code":"fruit",
+                "domain":"game",
+                "progress":"25",
+                "cooldown":"1.5"
+            },
+            {
+                "code":"drygrass",
+                "domain":"game",
+                "progress":"1",
+                "cooldown":"0.05"
+            }
+        ]
+    }
+},
+
+{
+    "op": "addmerge",
+    "file":"game:entities/animal/mammal/hare-baby.json",
+    "path": "/client/behaviors/-",
+    "value": {
+        "code": "tameable",
+        "size": "small",
+        "treat": [
+            {
+                "code":"vegetable-parsnip",
+                "domain":"game",
+                "progress":"10",
+                "cooldown":"1"
+            },
+            {
+                "code":"vegetable-cabbage",
+                "domain":"game",
+                "progress":"5",
+                "cooldown":"1"
+            },
+            {
+                "code":"vegetable-turnip",
+                "domain":"game",
+                "progress":"5",
+                "cooldown":"1"
+            },
+            {
+                "code":"vegetable-pumpkin",
+                "domain":"game",
+                "progress":"10",
+                "cooldown":"1"
+            },
+            {
+                "code":"vegetable-carrot",
+                "domain":"game",
+                "progress":"5",
+                "cooldown":"0.5"
+            },
+            {
+                "code":"grain",
+                "domain":"game",
+                "progress":"15",
+                "cooldown":"1"
+            },
+            {
+                "code":"fruit",
+                "domain":"game",
+                "progress":"25",
+                "cooldown":"1.5"
+            },
+            {
+                "code":"drygrass",
+                "domain":"game",
+                "progress":"1",
+                "cooldown":"0.05"
+            }
+        ]
+    }
 }
 
 ]
