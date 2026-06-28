@@ -1,12 +1,10 @@
 {
-    "item-creature-bunnypet-{type}-adult-male": "Wyszkolony Królik",
-    "item-creature-bunnypet-{type}-adult-female": "Wyszkolona Króliczyca",
-    "item-dead-creature-bunnypet-{type}-adult-male": "Martwy Wyszkolony Królik",
-    "item-dead-creature-bunnypet-{type}-adult-female": "Martwa Wyszkolona Króliczyca",
-    "item-creature-bunnypet-{type}-baby-male": "Wyszkolony Króliczek",
-    "item-creature-bunnypet-{type}-baby-female": "Wyszkolony Króliczek",
-    "item-dead-creature-bunnypet-{type}-baby-male": "Martwy Wyszkolony Króliczek",
-    "item-dead-creature-bunnypet-{type}-baby-female": "Martwy Wyszkolony Króliczek",
-    "bunnypetguide-title": "Guide to taming Hares",
+    "item-creature-bunny-*-adult-male": "Wyszkolony Królik",
+    "item-creature-bunny-*-adult-female": "Wyszkolona Króliczyca",
+    "item-dead-creature-bunny-*-adult-male": "Martwy Wyszkolony Królik",
+    "item-dead-creature-bunny-*-adult-female": "Martwa Wyszkolona Króliczyca",
+    "item-creature-bunny-*-baby-*": "Wyszkolony Króliczek",
+    "item-dead-creature-bunny-*-baby-*": "Martwy Wyszkolony Króliczek",
+    "bunnypetguide-title": "Taming Hares",
     "bunnypetguide-text": "<strong>Guide to taming Hares:</strong>\n\nWIP \n ..."
 }

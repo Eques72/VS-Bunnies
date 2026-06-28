@@ -28,9 +28,11 @@
             { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-plumnatal", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-apple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-guava", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-redapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-yellowaple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pinkapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-peach", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pear", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
            
             { "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"}
@@ -65,9 +67,11 @@
             { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-plumnatal", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-apple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-guava", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-redapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-yellowaple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pinkapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-peach", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pear", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
            
             { "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"}
@@ -104,9 +108,11 @@
             { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-plumnatal", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-apple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-guava", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-redapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-yellowaple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pinkapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-peach", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pear", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
            
             { "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"}
@@ -141,9 +147,11 @@
             { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-plumnatal", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-apple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-guava", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-redapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-yellowaple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pinkapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-peach", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pear", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
            
             { "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"}
