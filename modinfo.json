@@ -4,7 +4,7 @@
   "name": "Pet Bunny",
   "description" : "Have your fluffy friends as pets. Hares are now tambable. Requires Pet Ai.",
   "authors": ["Eques72"],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "side": "universal",
   "dependencis": { 
 	"game": "1.22.3",

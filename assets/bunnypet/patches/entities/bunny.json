@@ -27,9 +27,8 @@
             { "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-redapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-yellowaple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-yellowapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pinkapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-peach", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pear", "domain":"game", "progress":"0.25", "cooldown":"12"},
@@ -66,9 +65,8 @@
             { "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-redapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-yellowaple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-yellowapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pinkapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-peach", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pear", "domain":"game", "progress":"0.25", "cooldown":"12"},
@@ -107,9 +105,8 @@
             { "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-redapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-yellowaple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-yellowapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pinkapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-peach", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pear", "domain":"game", "progress":"0.25", "cooldown":"12"},
@@ -146,9 +143,8 @@
             { "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-redapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-            { "code":"fruit-yellowaple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-yellowapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pinkapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-peach", "domain":"game", "progress":"0.25", "cooldown":"12"},
             { "code":"fruit-pear", "domain":"game", "progress":"0.25", "cooldown":"12"},
@@ -157,5 +153,36 @@
             { "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"}
         ]
     }
+},
+
+{
+    "op": "addEach",
+    "path": "/client/behaviors/-",
+    "file": "game:entities/animal/mammal/hare-adult.json",
+    "value": [
+            { "code": "multiply", "enabledByType": { "*-female": true, "*": false } }
+        ]
+},
+{
+    "op": "addEach",
+    "path": "/server/behaviors/-",
+    "file": "game:entities/animal/mammal/hare-adult.json",
+    "value": 
+        [
+            {
+            "code": "multiply",
+            "enabledByType": { "*-female": true, "*": false },
+            "spawnEntityCodes": [ {"code":"hare-{type}-baby-male"}, {"code": "hare-{type}-baby-female"} ],
+            "requiresNearbyEntityCode": "bunnypet:bunny-*-adult-male",
+            "requiresNearbyEntityRange": 10,
+            "spawnQuantityMin": 1,
+            "spawnQuantityMax": 4,
+            "eatAnyway": true,
+            "pregnancyDays": 5,
+            "multiplyCooldownDaysMin": 2,
+            "multiplyCooldownDaysMax": 5,
+            "portionsEatenForMultiply": 2
+            }
+        ]
 }
 ]
