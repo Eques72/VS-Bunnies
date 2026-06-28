@@ -21,10 +21,10 @@
 			]
 		},
 		trappable: {
-			"small": { trapChance: 0.0, trapDestroyChance: 0.5 }
+			small: { trapChance: 0.0, trapDestroyChance: 0.5 }
 		},
 		handbook: {
-			"groupcode": "creaturegroup-hare",
+			groupcode: "creaturegroup-hare",
 			trappableGroupCode: "creaturegroup-hare-{type}-{age}"
 		}
 	},
@@ -44,35 +44,35 @@
 			{ code: "nametag", showtagonlywhentargeted: true},
 			{ code:"tameable", size:"small", disobediencePerDay:"0.05",
 				treat: [
-					{ "code":"vegetable-turnip", "domain":"game", "progress":"0.2", "cooldown":"2"},
-					{ "code":"vegetable-parsnip", "domain": "game", "progress": "0.15", "cooldown": "3"},
-					{ "code":"vegetable-carrot", "domain":"game", "progress":"0.15", "cooldown":"3"},
-					{ "code":"vegetable-pumpkin", "domain":"game", "progress":"0.15", "cooldown":"6"},
+					{ code:"vegetable-turnip", domain:"game", progress:"0.2", cooldown:"2"},
+					{ code:"vegetable-parsnip", domain: "game", progress: "0.15", cooldown: "3"},
+					{ code:"vegetable-carrot", domain:"game", progress:"0.15", cooldown:"3"},
+					{ code:"vegetable-pumpkin", domain:"game", progress:"0.15", cooldown:"6"},
 
-					{ "code":"grain-flax", "domain":"game", "progress":"0.15", "cooldown":"12"},
-					{ "code":"grain-sunflower", "domain":"game", "progress":"0.1", "cooldown":"16"},
+					{ code:"grain-flax", domain:"game", progress:"0.15", cooldown:"12"},
+					{ code:"grain-sunflower", domain:"game", progress:"0.1", cooldown:"16"},
 				
-					{ "code":"fruit-blackberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
-					{ "code":"fruit-raspberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
-					{ "code":"fruit-strawberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
-					{ "code":"fruit-blueberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-cranberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-redcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-whitecurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-redapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-yellowaple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-pinkapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-peach", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-pear", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
+					{ code:"fruit-blackberry", domain:"game", progress:"0.35", cooldown:"6"},
+					{ code:"fruit-raspberry", domain:"game", progress:"0.35", cooldown:"6"},
+					{ code:"fruit-strawberry", domain:"game", progress:"0.35", cooldown:"6"},
+					{ code:"fruit-blueberry", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-cranberry", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-redcurrant", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-whitecurrant", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-blackcurrant", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-cherry", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-cloudberry", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-gooseberry", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-redapple", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-yellowaple", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-pinkapple", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-peach", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-pear", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-pomegranate", domain:"game", progress:"0.2", cooldown:"16"},
 				
-					{ "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"},
-                    { "code": "petcookie-veggie-perfect", "domain": "petai", "progress": "0.5", "cooldown": "12"},
-                    { "code": "petcookie-veggie-partbaked", "domain": "petai", "progress": "0.35", "cooldown": "12"}
+					{ code:"drygrass", domain:"game", progress:"0.05", cooldown:"0.5"},
+                    { code: "petcookie-veggie-perfect", domain: "petai", progress: "0.5", cooldown: "12"},
+                    { code: "petcookie-veggie-partbaked", domain: "petai", progress: "0.35", cooldown: "12"}
 				]
 			},
 			{ code: "mouthinventory",
@@ -116,9 +116,9 @@
 				]
 			},
             {
-                "code": "mortallywoundable",
-                "healingRequiredForRescue": 1,
-                "whenBelowHealth": 0.2
+                code: "mortallywoundable",
+                healingRequiredForRescue: 1,
+                whenBelowHealth: 0.2
             }
 		],
 		animations: [
@@ -341,33 +341,33 @@
 						allowTeleport: true
 					},
                     {
-                        "code": "seeknest",
-                        "priority": 1.22,
-                        "duringDayTimeFrames": [
+                        code: "seeknest",
+                        priority: 1.22,
+                        duringDayTimeFrames: [
                             {
-                                "fromHour": 9.5,
-                                "toHour": 18.5
+                                fromHour: 9.5,
+                                toHour: 18.5
                             },
                             {
-                                "fromHour": 0.5,
-                                "toHour": 4.5
+                                fromHour: 0.5,
+                                toHour: 4.5
                             }
                         ],
-                        "movespeed": 0.006,
-                        "animation": "Walk",
-						"animationSpeed": 1.25
+                        movespeed: 0.006,
+                        animation: "Walk",
+						animationSpeed: 1.25
                     },
                     {
-                        "code": "happydance",
-                        "priority": 1.4,
-                        "priorityForCancel": 1.8,
-                        "minduration": 4000,
-                        "maxduration": 10000,
-                        "initialMinCoolDown": 0,
-                        "initialMaxCoolDown": 0,
-                        "mincooldown": 10000,
-                        "maxcooldown": 30000,
-                        "animation": "Tippytaps"
+                        code: "happydance",
+                        priority: 1.4,
+                        priorityForCancel: 1.8,
+                        minduration: 4000,
+                        maxduration: 10000,
+                        initialMinCoolDown: 0,
+                        initialMaxCoolDown: 0,
+                        mincooldown: 10000,
+                        maxcooldown: 30000,
+                        animation: "Tippytaps"
                     }
 				]
 			},
@@ -415,35 +415,35 @@
 				size: "small",
 				disobediencePerDay: "0.05",
 				treat: [
-					{ "code":"vegetable-turnip", "domain":"game", "progress":"0.2", "cooldown":"2"},
-					{ "code":"vegetable-parsnip", "domain": "game", "progress": "0.15", "cooldown": "3"},
-					{ "code":"vegetable-carrot", "domain":"game", "progress":"0.15", "cooldown":"3"},
-					{ "code":"vegetable-pumpkin", "domain":"game", "progress":"0.15", "cooldown":"6"},
+					{ code:"vegetable-turnip", domain:"game", progress:"0.2", cooldown:"2"},
+					{ code:"vegetable-parsnip", domain: "game", progress: "0.15", cooldown: "3"},
+					{ code:"vegetable-carrot", domain:"game", progress:"0.15", cooldown:"3"},
+					{ code:"vegetable-pumpkin", domain:"game", progress:"0.15", cooldown:"6"},
 
-					{ "code":"grain-flax", "domain":"game", "progress":"0.15", "cooldown":"12"},
-					{ "code":"grain-sunflower", "domain":"game", "progress":"0.1", "cooldown":"16"},
+					{ code:"grain-flax", domain:"game", progress:"0.15", cooldown:"12"},
+					{ code:"grain-sunflower", domain:"game", progress:"0.1", cooldown:"16"},
 				
-					{ "code":"fruit-blackberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
-					{ "code":"fruit-raspberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
-					{ "code":"fruit-strawberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
-					{ "code":"fruit-blueberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-cranberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-redcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-whitecurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-redapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-yellowaple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-pinkapple", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-peach", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-pear", "domain":"game", "progress":"0.25", "cooldown":"12"},
-					{ "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
+					{ code:"fruit-blackberry", domain:"game", progress:"0.35", cooldown:"6"},
+					{ code:"fruit-raspberry", domain:"game", progress:"0.35", cooldown:"6"},
+					{ code:"fruit-strawberry", domain:"game", progress:"0.35", cooldown:"6"},
+					{ code:"fruit-blueberry", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-cranberry", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-redcurrant", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-whitecurrant", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-blackcurrant", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-cherry", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-cloudberry", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-gooseberry", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-redapple", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-yellowaple", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-pinkapple", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-peach", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-pear", domain:"game", progress:"0.25", cooldown:"12"},
+					{ code:"fruit-pomegranate", domain:"game", progress:"0.2", cooldown:"16"},
 				
-					{ "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"},
-                    { "code": "petcookie-veggie-perfect", "domain": "petai", "progress": "0.5", "cooldown": "12"},
-                    { "code": "petcookie-veggie-partbaked", "domain": "petai", "progress": "0.35", "cooldown": "12"}
+					{ code:"drygrass", domain:"game", progress:"0.05", cooldown:"0.5"},
+                    { code: "petcookie-veggie-perfect", domain: "petai", progress: "0.5", cooldown: "12"},
+                    { code: "petcookie-veggie-partbaked", domain: "petai", progress: "0.35", cooldown: "12"}
 				]
 			},
 			{
@@ -456,9 +456,9 @@
 				]
 			},
             {
-                "code": "mortallywoundable",
-                "healingRequiredForRescue": 1,
-                "whenBelowHealth": 0.2
+                code: "mortallywoundable",
+                healingRequiredForRescue: 1,
+                whenBelowHealth: 0.2
             }
 		]
 	},
