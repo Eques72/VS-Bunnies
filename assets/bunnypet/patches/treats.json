@@ -5,14 +5,6 @@
         "value": {
             "name": "considerpetfood"
         },
-        "file": "game:itemtypes/resource/drygrass.json"
-    },
-    {
-        "op": "addmerge",
-        "path": "/behaviors/-",
-        "value": {
-            "name": "considerpetfood"
-        },
         "file": "game:itemtypes/food/fruit.json"
     },
     {

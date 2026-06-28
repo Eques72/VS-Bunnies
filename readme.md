@@ -8,5 +8,7 @@ Todo
 [x] custom entity: bunny and baby, same commands, some behaviour differences
 [x] make bunnies breedable with wild bunnies -> births untamed
 [ ] add an option to block growing up of baby-bunny
-[ ] add pet cookies
+[x] add pet cookies
 [ ] test and extend the food list
+[ ] uniform json style
+[ ] detailed tame params in readme or custom config

@@ -34,10 +34,10 @@
 	client: {
 		renderer: "Shape",
 		shapeByType: {
-			"*":	{ base: "entity/animal/mammal/hare/european-{gender}" }
+			"*":	{ base: "game:entity/animal/mammal/hare/european-{gender}" }
 		},
 		textures: { 
-			"skin": { base: "entity/animal/mammal/hare/{type}-{gender}*" }
+			"skin": { base: "game:entity/animal/mammal/hare/{type}-{gender}*" }
 		},
 		behaviors: [
 			{ code: "repulseagents" }, 
@@ -49,29 +49,65 @@
 			{ code: "despawn", minPlayerDistance: 8, belowLightLevel: 8, minSeconds: 200 },
 			{ code: "ropetieable", minGeneration: 0 },
 			{ code: "pettableextended", minGeneration: 0 },
-			{ code: "nametag", showtagonlywhentargeted: true}
-			{ code:"tameable", size:"small", disobediencePerDay:"1",
-				treat:[
-					{ code:"vegetable-parsnip", domain: "game", progress: "10", cooldown: "1"},
-					{ code:"vegetable-cabbage", domain:"game", progress:"5", cooldown:"1"},
-					{ code:"vegetable-turnip", domain:"game", progress:"5", cooldown:"1"},
-					{ code:"vegetable-pumpkin", domain:"game", progress:"10", cooldown:"1"},
-					{ code:"vegetable-carrot", domain:"game", progress:"5", cooldown:"0.5"},
-					{ code:"grain", domain:"game", progress:"15", cooldown:"1"},
-					{ code:"fruit", domain:"game", progress:"25", cooldown:"1.5"},
-					{ code:"drygrass", domain:"game", progress:"1", cooldown:"0.05"}
-        		]
+			{ code: "nametag", showtagonlywhentargeted: true},
+			{ code: "tameable", size:"small", disobediencePerDay:"0.05",
+				treat: [
+					{ "code":"vegetable-turnip", "domain":"game", "progress":"0.2", "cooldown":"2"},
+					{ "code":"vegetable-parsnip", "domain": "game", "progress": "0.15", "cooldown": "3"},
+					{ "code":"vegetable-carrot", "domain":"game", "progress":"0.15", "cooldown":"3"},
+					{ "code":"vegetable-pumpkin", "domain":"game", "progress":"0.15", "cooldown":"6"},
+
+					{ "code":"grain-flax", "domain":"game", "progress":"0.15", "cooldown":"12"},
+					{ "code":"grain-sunflower", "domain":"game", "progress":"0.1", "cooldown":"16"},
+				
+					{ "code":"fruit-blackberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+					{ "code":"fruit-raspberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+					{ "code":"fruit-strawberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+					{ "code":"fruit-blueberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-cranberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-redcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-whitecurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-plumnatal", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-apple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-guava", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
+				
+					{ "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"},
+                    { "code": "petcookie-veggie-perfect", "domain": "petai", "progress": "0.5", "cooldown": "12"},
+                    { "code": "petcookie-veggie-partbaked", "domain": "petai", "progress": "0.35", "cooldown": "12"}
+				]
 			},
-			{ code: "mouthinventory", acceptStacks: [ 
-					{ type: "item", code: "vegetable-parsnip" },
-					{ type: "item", code: "vegetable-cabbage" },
+			{ code: "mouthinventory", 
+			  acceptStacks: [
 					{ type: "item", code: "vegetable-turnip" },
-					{ type: "item", code: "vegetable-pumpkin" },
+					{ type: "item", code: "vegetable-parsnip" },
 					{ type: "item", code: "vegetable-carrot" },
-					{ type: "item", code: "grain" },
-					{ type: "item", code: "fruit" },
-					{ type: "item", code: "drygrass" }
-				] 
+					{ type: "item", code: "vegetable-pumpkin" },
+					{ type: "item", code: "grain-flax" },
+					{ type: "item", code: "grain-sunflower" },
+					{ type: "item", code: "fruit-blackberry" },
+					{ type: "item", code: "fruit-raspberry" },
+					{ type: "item", code: "fruit-strawberry" },
+					{ type: "item", code: "fruit-blueberry" },
+					{ type: "item", code: "fruit-cranberry" },
+					{ type: "item", code: "fruit-redcurrant" },
+					{ type: "item", code: "fruit-whitecurrant" },
+					{ type: "item", code: "fruit-blackcurrant" },
+					{ type: "item", code: "fruit-cherry" },
+					{ type: "item", code: "fruit-cloudberry" },
+					{ type: "item", code: "fruit-gooseberry" },
+					{ type: "item", code: "fruit-plumnatal" },
+					{ type: "item", code: "fruit-apple" },
+					{ type: "item", code: "fruit-guava" },
+					{ type: "item", code: "fruit-pomegranate" },
+					{ type: "item", code: "drygrass" },
+					{ type: "item", code: "petai:petcookie-veggie-perfect" },
+					{ type: "item", code: "petai:petcookie-veggie-partbaked" }
+				]
 			},
 			{
 				code: "receivecommand",
@@ -82,7 +118,12 @@
 					{ commandName: "stay", commandType: "COMPLEX", minObedience: 0.3 },
 					{ commandName: "followmaster", commandType: "COMPLEX", minObedience: 0.3 }
 				]
-			}
+			},
+			{
+                "code": "mortallywoundable",
+                "healingRequiredForRescue": 1,
+                "whenBelowHealth": 0.2
+            }
 		],
 		animations: [
 			{
@@ -321,7 +362,10 @@
 						priority: 1.5,
 						priorityForCancel: 1.7,
 						eatItemCategories: ["Vegetable", "Fruit"],
-						eatItemCodes: ["vegetable-parsnip", "vegetable-cabbage", "vegetable-turnip", "vegetable-pumpkin", "vegetable-carrot", "grain", "fruit", "drygrass"],
+						eatItemCodes: ["vegetable-turnip", "vegetable-parsnip", "vegetable-carrot", "vegetable-pumpkin", "grain-flax", "grain-sunflower", 
+										"fruit-blackberry", "fruit-raspberry", "fruit-strawberry", "fruit-blueberry", "fruit-cranberry", "fruit-redcurrant", 
+										"fruit-whitecurrant", "fruit-blackcurrant", "fruit-cherry", "fruit-cloudberry", "fruit-gooseberry", "fruit-plumnatal", 
+										"fruit-apple", "fruit-guava", "fruit-pomegranate", "drygrass", "petai:petcookie-veggie-perfect", "petai:petcookie-veggie-partbaked"],
 						useTime: 2,
 						mincooldownHours: 0.5,
 						maxcooldownHours: 1.5
@@ -366,7 +410,36 @@
 						searchRange: 40,
 						animation: "Run",
 						allowTeleport: true
-					}
+					},
+                    {
+                        "code": "seeknest",
+                        "priority": 1.22,
+                        "duringDayTimeFrames": [
+                            {
+                                "fromHour": 9.5,
+                                "toHour": 18.5
+                            },
+                            {
+                                "fromHour": 0.5,
+                                "toHour": 4.5
+                            }
+                        ],
+                        "movespeed": 0.006,
+                        "animation": "Walk",
+						"animationSpeed": 1.25
+                    },
+                    {
+                        "code": "happydance",
+                        "priority": 1.4,
+                        "priorityForCancel": 1.8,
+                        "minduration": 4000,
+                        "maxduration": 10000,
+                        "initialMinCoolDown": 0,
+                        "initialMaxCoolDown": 0,
+                        "mincooldown": 10000,
+                        "maxcooldown": 30000,
+                        "animation": "Tippytaps"
+                    }
 				]
 			},
 			{
@@ -378,14 +451,30 @@
 			{
 				code: "mouthinventory",
 				acceptStacks: [
-					{ type: "item", code: "vegetable-parsnip" },
-					{ type: "item", code: "vegetable-cabbage" },
 					{ type: "item", code: "vegetable-turnip" },
-					{ type: "item", code: "vegetable-pumpkin" },
+					{ type: "item", code: "vegetable-parsnip" },
 					{ type: "item", code: "vegetable-carrot" },
-					{ type: "item", code: "grain" },
-					{ type: "item", code: "fruit" },
-					{ type: "item", code: "drygrass" }
+					{ type: "item", code: "vegetable-pumpkin" },
+					{ type: "item", code: "grain-flax" },
+					{ type: "item", code: "grain-sunflower" },
+					{ type: "item", code: "fruit-blackberry" },
+					{ type: "item", code: "fruit-raspberry" },
+					{ type: "item", code: "fruit-strawberry" },
+					{ type: "item", code: "fruit-blueberry" },
+					{ type: "item", code: "fruit-cranberry" },
+					{ type: "item", code: "fruit-redcurrant" },
+					{ type: "item", code: "fruit-whitecurrant" },
+					{ type: "item", code: "fruit-blackcurrant" },
+					{ type: "item", code: "fruit-cherry" },
+					{ type: "item", code: "fruit-cloudberry" },
+					{ type: "item", code: "fruit-gooseberry" },
+					{ type: "item", code: "fruit-plumnatal" },
+					{ type: "item", code: "fruit-apple" },
+					{ type: "item", code: "fruit-guava" },
+					{ type: "item", code: "fruit-pomegranate" },
+					{ type: "item", code: "drygrass" },
+					{ type: "item", code: "petai:petcookie-veggie-perfect" },
+					{ type: "item", code: "petai:petcookie-veggie-partbaked" }
 				]
 			},
 			{
@@ -395,16 +484,35 @@
 			{
 				code: "tameable",
 				size: "small",
-				disobediencePerDay: "1",
+				disobediencePerDay: "0.05",
 				treat: [
-					{ code: "vegetable-parsnip", domain: "game", progress: "10", cooldown: "1" },
-					{ code: "vegetable-cabbage", domain: "game", progress: "5", cooldown: "1" },
-					{ code: "vegetable-turnip", domain: "game", progress: "5", cooldown: "1" },
-					{ code: "vegetable-pumpkin", domain: "game", progress: "10", cooldown: "1" },
-					{ code: "vegetable-carrot", domain: "game", progress: "5", cooldown: "0.5" },
-					{ code: "grain", domain: "game", progress: "15", cooldown: "1" },
-					{ code: "fruit", domain: "game", progress: "25", cooldown: "1.5" },
-					{ code: "drygrass", domain: "game", progress: "1", cooldown: "0.05" }
+					{ "code":"vegetable-turnip", "domain":"game", "progress":"0.2", "cooldown":"2"},
+					{ "code":"vegetable-parsnip", "domain": "game", "progress": "0.15", "cooldown": "3"},
+					{ "code":"vegetable-carrot", "domain":"game", "progress":"0.15", "cooldown":"3"},
+					{ "code":"vegetable-pumpkin", "domain":"game", "progress":"0.15", "cooldown":"6"},
+
+					{ "code":"grain-flax", "domain":"game", "progress":"0.15", "cooldown":"12"},
+					{ "code":"grain-sunflower", "domain":"game", "progress":"0.1", "cooldown":"16"},
+				
+					{ "code":"fruit-blackberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+					{ "code":"fruit-raspberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+					{ "code":"fruit-strawberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+					{ "code":"fruit-blueberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-cranberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-redcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-whitecurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-plumnatal", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-apple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-guava", "domain":"game", "progress":"0.25", "cooldown":"12"},
+					{ "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
+				
+					{ "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"},
+                    { "code": "petcookie-veggie-perfect", "domain": "petai", "progress": "0.5", "cooldown": "12"},
+                    { "code": "petcookie-veggie-partbaked", "domain": "petai", "progress": "0.35", "cooldown": "12"}
 				]
 			},
 			{
@@ -415,13 +523,18 @@
 					{ commandName: "stay", commandType: "COMPLEX", minObedience: 0.3 },
 					{ commandName: "followmaster", commandType: "COMPLEX", minObedience: 0.3 }
 				]
-			}
+			},
+			{
+                "code": "mortallywoundable",
+                "healingRequiredForRescue": 1,
+                "whenBelowHealth": 0.2
+            }
 		]
 	},
 	sounds: {
-		hurt: "creature/hare-hurt",
-		death: "creature/hare-hurt",
-		idle: { path: "creature/hare-idle", pitch: { avg: 1, var: 0.25 } }
+		hurt: "game:creature/hare-hurt",
+		death: "game:creature/hare-hurt",
+		idle: { path: "game:creature/hare-idle", pitch: { avg: 1, var: 0.25 } }
 	},
 	idleSoundChance: 0.03
 }

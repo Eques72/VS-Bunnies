@@ -7,16 +7,33 @@
         "code":"tameable",
         "tameEntityCode": "bunnypet:bunny-{type}-adult-{gender}",
         "size":"small",
-        "disobediencePerDay":"15",
+        "disobediencePerDay":"0.2",
         "treat":[
-            { "code":"vegetable-parsnip", "domain": "game", "progress": "10", "cooldown": "1"},
-            { "code":"vegetable-cabbage", "domain":"game", "progress":"5", "cooldown":"1"},
-            { "code":"vegetable-turnip", "domain":"game", "progress":"5", "cooldown":"1"},
-            { "code":"vegetable-pumpkin", "domain":"game", "progress":"10", "cooldown":"1"},
-            { "code":"vegetable-carrot", "domain":"game", "progress":"5", "cooldown":"0.5"},
-            { "code":"grain", "domain":"game", "progress":"15", "cooldown":"1"},
-            { "code":"fruit", "domain":"game", "progress":"25", "cooldown":"1.5"},
-            { "code":"drygrass", "domain":"game", "progress":"1", "cooldown":"0.05"}
+            { "code":"vegetable-turnip", "domain":"game", "progress":"0.2", "cooldown":"2"},
+            { "code":"vegetable-parsnip", "domain": "game", "progress": "0.15", "cooldown": "3"},
+            { "code":"vegetable-carrot", "domain":"game", "progress":"0.15", "cooldown":"3"},
+            { "code":"vegetable-pumpkin", "domain":"game", "progress":"0.15", "cooldown":"6"},
+
+            { "code":"grain-flax", "domain":"game", "progress":"0.15", "cooldown":"12"},
+            { "code":"grain-sunflower", "domain":"game", "progress":"0.1", "cooldown":"16"},
+           
+            { "code":"fruit-blackberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-raspberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-strawberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-blueberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cranberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-redcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-whitecurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-plumnatal", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-apple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-guava", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
+           
+            { "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"}
         ]
     }
 },
@@ -29,14 +46,31 @@
         "code": "tameable",
         "size": "small",
         "treat": [
-            { "code":"vegetable-parsnip", "domain": "game", "progress": "10", "cooldown": "1"},
-            { "code":"vegetable-cabbage", "domain":"game", "progress":"5", "cooldown":"1"},
-            { "code":"vegetable-turnip", "domain":"game", "progress":"5", "cooldown":"1"},
-            { "code":"vegetable-pumpkin", "domain":"game", "progress":"10", "cooldown":"1"},
-            { "code":"vegetable-carrot", "domain":"game", "progress":"5", "cooldown":"0.5"},
-            { "code":"grain", "domain":"game", "progress":"15", "cooldown":"1"},
-            { "code":"fruit", "domain":"game", "progress":"25", "cooldown":"1.5"},
-            { "code":"drygrass", "domain":"game", "progress":"1", "cooldown":"0.05"}
+            { "code":"vegetable-turnip", "domain":"game", "progress":"0.2", "cooldown":"2"},
+            { "code":"vegetable-parsnip", "domain": "game", "progress": "0.15", "cooldown": "3"},
+            { "code":"vegetable-carrot", "domain":"game", "progress":"0.15", "cooldown":"3"},
+            { "code":"vegetable-pumpkin", "domain":"game", "progress":"0.15", "cooldown":"6"},
+
+            { "code":"grain-flax", "domain":"game", "progress":"0.15", "cooldown":"12"},
+            { "code":"grain-sunflower", "domain":"game", "progress":"0.1", "cooldown":"16"},
+           
+            { "code":"fruit-blackberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-raspberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-strawberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-blueberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cranberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-redcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-whitecurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-plumnatal", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-apple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-guava", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
+           
+            { "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"}
         ]
     }
 },
@@ -49,16 +83,33 @@
         "code":"tameable",
         "tameEntityCode": "bunnypet:bunny-{type}-baby-{gender}",
         "size":"small",
-        "disobediencePerDay":"5",
+        "disobediencePerDay":"0.1",
         "treat":[
-            { "code":"vegetable-parsnip", "domain": "game", "progress": "10", "cooldown": "1"},
-            { "code":"vegetable-cabbage", "domain":"game", "progress":"5", "cooldown":"1"},
-            { "code":"vegetable-turnip", "domain":"game", "progress":"5", "cooldown":"1"},
-            { "code":"vegetable-pumpkin", "domain":"game", "progress":"10", "cooldown":"1"},
-            { "code":"vegetable-carrot", "domain":"game", "progress":"5", "cooldown":"0.5"},
-            { "code":"grain", "domain":"game", "progress":"15", "cooldown":"1"},
-            { "code":"fruit", "domain":"game", "progress":"25", "cooldown":"1.5"},
-            { "code":"drygrass", "domain":"game", "progress":"1", "cooldown":"0.05"}
+            { "code":"vegetable-turnip", "domain":"game", "progress":"0.2", "cooldown":"2"},
+            { "code":"vegetable-parsnip", "domain": "game", "progress": "0.15", "cooldown": "3"},
+            { "code":"vegetable-carrot", "domain":"game", "progress":"0.15", "cooldown":"3"},
+            { "code":"vegetable-pumpkin", "domain":"game", "progress":"0.15", "cooldown":"6"},
+
+            { "code":"grain-flax", "domain":"game", "progress":"0.15", "cooldown":"12"},
+            { "code":"grain-sunflower", "domain":"game", "progress":"0.1", "cooldown":"16"},
+           
+            { "code":"fruit-blackberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-raspberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-strawberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-blueberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cranberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-redcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-whitecurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-plumnatal", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-apple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-guava", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
+           
+            { "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"}
         ]
     }
 },
@@ -71,16 +122,32 @@
         "code": "tameable",
         "size": "small",
         "treat": [
-            { "code":"vegetable-parsnip", "domain": "game", "progress": "10", "cooldown": "1"},
-            { "code":"vegetable-cabbage", "domain":"game", "progress":"5", "cooldown":"1"},
-            { "code":"vegetable-turnip", "domain":"game", "progress":"5", "cooldown":"1"},
-            { "code":"vegetable-pumpkin", "domain":"game", "progress":"10", "cooldown":"1"},
-            { "code":"vegetable-carrot", "domain":"game", "progress":"5", "cooldown":"0.5"},
-            { "code":"grain", "domain":"game", "progress":"15", "cooldown":"1"},
-            { "code":"fruit", "domain":"game", "progress":"25", "cooldown":"1.5"},
-            { "code":"drygrass", "domain":"game", "progress":"1", "cooldown":"0.05"}
+            { "code":"vegetable-turnip", "domain":"game", "progress":"0.2", "cooldown":"2"},
+            { "code":"vegetable-parsnip", "domain": "game", "progress": "0.15", "cooldown": "3"},
+            { "code":"vegetable-carrot", "domain":"game", "progress":"0.15", "cooldown":"3"},
+            { "code":"vegetable-pumpkin", "domain":"game", "progress":"0.15", "cooldown":"6"},
+
+            { "code":"grain-flax", "domain":"game", "progress":"0.15", "cooldown":"12"},
+            { "code":"grain-sunflower", "domain":"game", "progress":"0.1", "cooldown":"16"},
+           
+            { "code":"fruit-blackberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-raspberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-strawberry", "domain":"game", "progress":"0.35", "cooldown":"6"},
+            { "code":"fruit-blueberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cranberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-redcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-whitecurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-blackcurrant", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cherry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-cloudberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-gooseberry", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-plumnatal", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-apple", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-guava", "domain":"game", "progress":"0.25", "cooldown":"12"},
+            { "code":"fruit-pomegranate", "domain":"game", "progress":"0.2", "cooldown":"16"},
+           
+            { "code":"drygrass", "domain":"game", "progress":"0.05", "cooldown":"0.5"}
         ]
     }
 }
-
 ]
