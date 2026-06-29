@@ -8,4 +8,4 @@ version=$(jq -r '.version' "$MI")
 
 archive="${modid}-${version}.zip"
 
-zip -r "$archive" assets/ modinfo.json
+zip -r "$archive" assets/ modinfo.json modicon.png
