@@ -5,7 +5,7 @@
 - [ ] Adding an option to block baby bunny growth
 - [ ] Create additional interactions with bunnies
 - [ ] Create a configuration file
-- [ ] Add practical usage for tamed Bunnies, e.g. early spotting of wolfs and warning squeaks  
+- [ ] Add practical usage for tamed Bunnies, e.g. early spotting of wolves and warning squeaks  
 
 ## Compatibility
 ...
