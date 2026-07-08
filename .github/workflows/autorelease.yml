@@ -51,11 +51,12 @@ jobs:
         run: |
           ZIP="${{ steps.zip.outputs.file }}"
           NAME=$(basename "$ZIP" .zip)
-          TAG="automated-release"
-      
-          gh release delete "$TAG" --yes || true
-          git push --delete origin "$TAG" || true
-      
-          gh release create "$TAG" "$ZIP" \
+          
+          if gh release view "$NAME" >/dev/null 2>&1; then
+            echo "Release '$NAME' already exists. Skipping."
+            exit 0
+          fi
+          
+          gh release create "$NAME" "$ZIP" \
             --title "$NAME" \
             --notes "Automated release"
