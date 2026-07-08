@@ -15,10 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check for publish.sh
+      - name: Check for packzip.sh
         id: script
         run: |
-          if [ -f "./publish.sh" ]; then
+          if [ -f "./packzip.sh" ]; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
           else
             echo "script.sh not found. Skipping."
@@ -28,8 +28,8 @@ jobs:
       - name: Run script
         if: steps.script.outputs.exists == 'true'
         run: |
-          chmod +x ./script.sh
-          ./script.sh
+          chmod +x ./packzip.sh
+          ./packzip.sh
 
       - name: Is Zip file created
         if: steps.script.outputs.exists == 'true'
