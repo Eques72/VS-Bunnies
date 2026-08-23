@@ -16,6 +16,10 @@
       <HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Include="PetAI">
+        <HintPath>external/PetAI.dll</HintPath>
+        <Private>false</Private>
+    </Reference>
 </ItemGroup>
 
 <ItemGroup>

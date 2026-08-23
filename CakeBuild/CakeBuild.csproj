@@ -19,5 +19,8 @@
     <Reference Include="VSSurvivalMod">
         <HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
     </Reference>
+    <Reference Include="PetAI">
+        <HintPath>../BunnyPet/external/PetAI.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
