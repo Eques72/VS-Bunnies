@@ -2,6 +2,7 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
 using Vintagestory.GameContent;
+using Vintagestory.API.Datastructures;
 
 class EntityBehaviorPetTemporalAura : EntityBehavior
 {
@@ -48,7 +49,7 @@ class EntityBehaviorPetTemporalAura : EntityBehavior
         if (nearest == null) 
         return stability;
 
-        if (nearest.PlayerUID != PetAI.EntityBehaviorTameable.OwnerId) 
+        if (nearest.PlayerUID != "0") // PetAI.EntityBehaviorTameable.OwnerId) 
         return stability;
 
         return GameMath.Clamp(stability + stabilityBonus, MIN_STABILITY, MAX_STABILITY);
