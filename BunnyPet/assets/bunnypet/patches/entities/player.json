@@ -1,0 +1,10 @@
+[
+    {
+        "op": "addmerge",
+        "file": "game:entities/humanoid/player.json",
+        "path": "/server/behaviors/-",
+        "value": {
+            "code": "temporaldebug"
+        }
+    }
+]
